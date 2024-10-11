@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    background-image: url('sky.png');
+    background-size: cover; /* Stretch the image to cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    margin: 0; /* Remove default body margin */
+	
+}
+
+/* PLANE START----------------------------------------------------------- */
+.seatSelection{
+	box-sizing: border-box;
+}.seatSelection body {
+	font-size: 16px;
+	background: black;
+}
+.plane{
+	margin: 20px auto;
+	max-width: 600px;
+	min-height: 100px;
+	background: white;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	background: gray;
+}
+.select {
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.select h1{
+	width: 60%;
+	margin: 100px auto 35px auto;
+}
+.exit{
+	height: 50px;
+	position: relative;
+}
+
+.exit:before, .exit:after {
+	content: 'EXIT';
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0px 2px 2px 2px;
+	display: block;
+	position: absolute;
+	background: red;
+	color: white;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+}
+
+.exit:before {
+	left: 20px;
+	font-size: 15px;
+}
+
+.exit:after {
+	right: 20px;
+	font-size: 15px;
+}
+
+ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.seats {
+	max-width: 500px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin-left: 20px;
+}
+
+.seat {
+	display: flex;
+	flex: 0 0 14.28%;
+	padding: 3px;
+	position: relative;
+}
+
+.seat label {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 1.5 rem;
+	padding: 4px 0;
+	background: rgb(119, 148, 209);
+	border-radius: 5px;
+	color: black;
+}
+.seat label:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0px 2px rgb(119, 148, 209);
+}
+.seat input{
+	position: absolute;
+}
+.seat input[type=checkbox]:checked + label {
+	background: #656e65;
+}
+.seat:nth-child(3) {
+	margin-right: 14%;
+}
+/* PLANE END ----------------------------------------------------------- */
+
+.booking-form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.tab-button {
+	background-color: #5F9EA0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700; /* Use a bold font weight */
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+	color: rgb(0, 56, 99);
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tab-content {
+	display: none;
+	margin-top: 20px;
+	
+}
+
+.tab-content.active {
+	display: block;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+input {
+	width: calc(100% - 16px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+
+.paymentInfo {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the font bold */
+    font-family: 'Helvetica', sans-serif; /* Use a more uniform font */
+    /* Add any other styling you may need for the payment info */
+	margin-bottom: 10px;
+	color: #000000;
+	text-align: right;
+}
+
+
+/* Submit button styling */
+button {
+    background-color: #87CEEB;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	align-items: left;
+}
+
+button:hover {
+    background-color: #5F9EA0;
+}
+
+.submit-button {
+    background-color: #87CEEB;
+    color: #000000;
+    border: none;
+    padding: 15px 30px; /* Adjust the padding for a larger button */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	margin-right: 10px;
+	align-items: left;
+}
+
+.submit-button:hover {
+    background-color: #5F9EA0;
+}
+
+/* 
+#personalInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#personalInfo label {
+    width: 100%; 
+    margin-bottom: 5px;
+}
+
+#personalInfo input {
+    width: 100%;
+    padding: 8px; 
+    margin-bottom: 10px;
+}
+
+#personalInfo .name-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(50% - 5px); 
+}
+
+#personalInfo .name-section label {
+    width: 45%; 
+    margin-right: 5%; 
+}
+
+#personalInfo .name-section input {
+    width: 50%; 
+}
+
+#personalInfo .submit-button {
+    background-color: #87CEEB;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#personalInfo .submit-button:hover {
+    background-color: #5F9EA0;
+}  */

@@ -1,0 +1,147 @@
+/* General styling */
+body {
+    background-color: azure;
+    color: rgb(27, 12, 126);
+    margin: 0;
+    font-family: Arial, sans-serif; /* Add a common font */
+}
+
+/* Select and input styling */
+input,
+select,
+option {
+    color: rgb(27, 12, 126);
+}
+
+/* Select wrapper styling */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Page wrapper styling */
+.welcome,
+.bod,
+.foot {
+    width: 100%;
+}
+
+.welcome {
+    background-image: url("logoo.jpg");
+    height: 800px;
+}
+
+.bod {
+    background-color: rgb(253, 253, 253);
+    margin-top: 5%;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 800px;
+}
+
+.foot {
+    background-color: rgb(173, 190, 210);
+    height: 100px;
+    width: 100%;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #87CEEB;
+}
+.airport {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    }
+.navbar-brand,
+.nav-link,
+.nav-item {
+    color: #333 !important;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-shadow:
+        1px 1px 1px rgb(0, 21, 255)(47, 0, 255),
+        2px 2px 1px rgb(0, 229, 255)(0, 179, 255);
+    text-align: center;
+}
+
+/* Search wrapper styling */
+#searchWrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button styling */
+#submit {
+    background-color: #87CEEB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #5F9EA0;
+}
+
+/* Flight card styling */
+.flight-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 250px; /* Set maximum width */
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.flight-card p {
+    margin: 0;
+}
+
+.airline,
+.price,
+.flight-number,
+.departure,
+.return {
+    color: #555;
+}
+
+.airline-label,
+.price-label,
+.flight-number-label,
+.departure-label,
+.return-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Book now button styling */
+.book-now-button {
+    background-color: #a7d5ef;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-now-button:hover {
+    background-color: #5F9EA0;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
